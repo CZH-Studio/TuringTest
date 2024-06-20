@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".activity.LoginActivity">
+
+    <EditText
+            android:id="@+id/login_username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="96dp"
+            android:autofillHints="@string/prompt_username"
+            android:hint="@string/prompt_username"
+            android:inputType="text"
+            android:selectAllOnFocus="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+            android:id="@+id/login_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:autofillHints="@string/prompt_password"
+            android:hint="@string/prompt_password"
+            android:imeActionLabel="@string/action_sign_in_short"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:selectAllOnFocus="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login_username"/>
+
+    <Button
+            android:id="@+id/login_login"
+            android:enabled="true"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:layout_gravity="start"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="64dp"
+            android:text="@string/action_sign_in"
+            android:textSize="30sp"
+            android:background="@drawable/bg_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login_password"
+            app:layout_constraintVertical_bias="0.193"
+            app:layout_constraintHorizontal_bias="0.497"/>
+
+    <Button
+            android:id="@+id/login_goto_register"
+            android:enabled="true"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:layout_gravity="start"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="64dp"
+            android:text="@string/action_goto_register"
+            android:background="@drawable/bg_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login_login"
+            app:layout_constraintVertical_bias="0.2"/>
+
+    <Button
+            android:id="@+id/login_change_ip"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="64dp"
+            android:enabled="true"
+            android:text="@string/action_change_ip"
+            android:background="@drawable/bg_button"
+            app:layout_constraintTop_toBottomOf="@id/login_goto_register"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.2"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

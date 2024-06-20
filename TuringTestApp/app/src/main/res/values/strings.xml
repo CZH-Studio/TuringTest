@@ -1,0 +1,114 @@
+<resources>
+<!--变量名命名规范
+标识项目名称的     app_name_[lang]（lang指语言）
+标识活动名称的     activity_[name]
+标签中出现的       label_[name]
+出现在按钮中的     action_[name]
+提示词            prompt_[name]
+程序中出现的常量字符串     string_[name]
+图片按钮描述      desc_[name]
+错误提示         err_[name]
+-->
+<!--    APP 程序名称    -->
+    <string name="app_name_en">TuringTest</string>
+    <string name="app_name_cn">图灵测试</string>
+
+<!--    ACTIVITY 活动名称     -->
+    <string name="activity_login">LoginActivity</string>
+    <string name="activity_main">MainActivity</string>
+    <string name="activity_register">RegisterActivity</string>
+    <string name="activity_play">PlayActivity</string>
+    <string name="activity_me">MeActivity</string>
+    <string name="activity_settings">SettingsActivity</string>
+    <string name="activity_ranking">RankingActivity</string>
+
+<!--    LABEL 标签内容     -->
+    <string name="label_round">已完成轮数：</string>
+    <string name="label_settings">设置</string>
+    <string name="label_ranking">排行榜</string>
+    <string name="label_me">账户</string>
+    <string name="label_username">用户名：</string>
+    <string name="label_uid">UID：</string>
+    <string name="label_score">分数：</string>
+    <string name="label_countdown">剩余时间：</string>
+
+<!--    ACTION 按钮名称     -->
+    <string name="action_sign_in">登 录</string>
+    <string name="action_goto_register">没有账户？去注册</string>
+    <string name="action_change_ip">修改服务器IP地址</string>
+    <string name="action_goto_sign_in">返回登录</string>
+    <string name="action_register">注 册</string>
+    <string name="action_sign_in_short">登录</string>
+    <string name="action_play">开始游戏</string>
+    <string name="action_logout">退出登录</string>
+    <string name="action_give_up">放弃</string>
+    <string name="action_send">发送</string>
+    <string name="action_back">返回主页</string>
+
+<!--    PROMPT 提示词     -->
+    <string name="prompt_username">用户名</string>
+    <string name="prompt_password">密码</string>
+    <string name="prompt_password_confirm">确认密码</string>
+    <string name="prompt_question">问点什么吧</string>
+
+<!--    ERROR 错误提示      -->
+    <string name="err_invalid_username">用户名不能为空且长度必须小于等于10！</string>
+    <string name="err_invalid_password">密码长度必须大于5！</string>
+    <string name="err_title">错误！</string>
+    <string name="err_connection">无法连接服务器！</string>
+    <string name="err_login_username">用户名不存在！</string>
+    <string name="err_login_password">密码错误！</string>
+    <string name="err_register">注册用户名重复！</string>
+    <string name="err_pwd_diff">两次输入的密码不同！</string>
+    <string name="err_server">服务器错误！</string>
+    <string name="err_empty">发送的内容不能为空！</string>
+    <string name="err_not_start">请稍等~游戏马上开始~</string>
+    <string name="err_mismatch">匹配失败！</string>
+    <string name="err_not_my_turn">当前不是你的回合！</string>
+    <string name="err_invalid_ip">IP地址格式错误！</string>
+    <string name="err_opposite_offline">对方掉线/放弃了，您将直接得分！</string>
+    <string name="suc_register">注册成功！</string>
+    <string name="suc_login">登录成功！</string>
+
+<!--    STRING 常量字符串     -->
+    <string-array name="string_difficulties">
+        <item>简单</item>
+        <item>中等</item>
+        <item>困难</item>
+    </string-array>
+    <string name="string_difficulty_choose">选择难度</string>
+    <string name="string_change_ip">修改服务器IP地址</string>
+    <string name="string_ip">ip</string>
+    <string name="string_confirm">确认</string>
+    <string name="string_cancel">取消</string>
+    <string name="string_matching">正在匹配……</string>
+    <string name="string_matching_time">匹配时间：</string>
+    <string name="string_userinfo">userinfo</string>
+    <string name="string_username">username</string>
+    <string name="string_password">password</string>
+    <string name="string_uid">uid</string>
+    <string name="string_score">score</string>
+    <string name="string_decision">请判断对面是？</string>
+    <string name="string_robot">AI</string>
+    <string name="string_human">人</string>
+    <string name="string_item_rank">排名</string>
+    <string name="string_item_username">用户名</string>
+    <string name="string_item_score">分数</string>
+    <string name="string_not_empty">输入的内容不能为空！</string>
+    <string name="string_connecting">正在与服务器建立连接，请稍后再试！</string>
+    <string name="string_difficulty">difficulty</string>
+    <string name="string_round_end">游戏已经结束，不能再进行对话了！</string>
+    <string name="string_result">游戏结果</string>
+    <string name="string_waiting">等待服务器返回结果……</string>
+    <string name="string_got_it">知道了！</string>
+    <string name="string_err_duplicate_decide">已经选择过了！请等待服务器的返回结果！</string>
+    <string name="string_give_up_title">确定要放弃吗？</string>
+    <string name="string_give_up_message">放弃会自动扣分！</string>
+
+<!--    DESC 图片按钮描述     -->
+    <string name="desc_settings">设置</string>
+    <string name="desc_ranking">排行榜</string>
+    <string name="desc_me">我</string>
+    <string name="desc_opposite">对手</string>
+
+</resources>

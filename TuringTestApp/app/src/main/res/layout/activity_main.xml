@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".activity.MainActivity">
+
+    <TextView
+            android:id="@+id/main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name_cn"
+            android:textSize="48sp"
+            android:layout_marginTop="96dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageButton
+            android:id="@+id/main_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_settings_foreground"
+            android:background="@color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/desc_settings"/>
+
+    <ImageButton
+            android:id="@+id/main_ranking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_leaderboard_foreground"
+            android:background="@color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/main_settings"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/desc_ranking"/>
+
+    <ImageButton
+            android:id="@+id/main_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_me_foreground"
+            android:background="@color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/main_ranking"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/desc_me"/>
+
+    <Button
+            android:id="@+id/main_play"
+            android:enabled="true"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:layout_gravity="start"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:text="@string/action_play"
+            android:background="@drawable/bg_button"
+            android:textSize="24sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+            android:id="@+id/main_logout"
+            android:enabled="true"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:layout_gravity="start"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="0dp"
+            android:text="@string/action_logout"
+            android:textSize="24sp"
+            android:background="@drawable/bg_button"
+            app:layout_constraintTop_toBottomOf="@+id/main_play"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

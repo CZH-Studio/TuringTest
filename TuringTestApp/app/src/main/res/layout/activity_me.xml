@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   android:paddingBottom="@dimen/activity_vertical_margin"
+                                                   android:paddingLeft="@dimen/activity_horizontal_margin"
+                                                   android:paddingRight="@dimen/activity_horizontal_margin"
+                                                   android:paddingTop="@dimen/activity_vertical_margin"
+                                                   tools:context=".activity.MeActivity">
+
+    <TextView
+            android:id="@+id/me_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_me"
+            android:textSize="24sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+            android:id="@+id/me_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_username"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/me_title"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="64dp"
+            android:layout_marginStart="64dp"/>
+
+    <TextView
+            android:id="@+id/me_uid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_uid"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/me_username"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="32dp"/>
+
+    <TextView
+            android:id="@+id/me_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_score"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/me_uid"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="32dp"/>
+
+    <Button
+            android:id="@+id/me_back"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:text="@string/action_back"
+            android:textSize="24sp"
+            android:background="@drawable/bg_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="64dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

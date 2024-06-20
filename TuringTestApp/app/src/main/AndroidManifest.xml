@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+            android:allowBackup="true"
+            android:dataExtractionRules="@xml/data_extraction_rules"
+            android:fullBackupContent="@xml/backup_rules"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name_en"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/Theme.TuringTest"
+            tools:targetApi="31">
+        <activity
+                android:name=".activity.LoginActivity"
+                android:screenOrientation="portrait"
+                android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.RegisterActivity"
+                  android:screenOrientation="portrait"
+                  android:label="@string/activity_register"/>
+        <activity android:name=".activity.MainActivity"
+                  android:screenOrientation="portrait"
+                  android:label="@string/activity_main"/>
+        <activity android:name=".activity.PlayActivity"
+                  android:screenOrientation="portrait"
+                  android:label="@string/activity_play"/>
+        <activity android:name=".activity.SettingsActivity"
+                  android:screenOrientation="portrait"
+                  android:label="@string/activity_settings"/>
+        <activity android:name=".activity.RankingActivity"
+                  android:screenOrientation="portrait"
+                  android:label="@string/activity_ranking"/>
+        <activity android:name=".activity.MeActivity"
+                  android:screenOrientation="portrait"
+                  android:label="@string/activity_me"/>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+</manifest>
